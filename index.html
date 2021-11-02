@@ -1,0 +1,55 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gästbok</title>
+</head>
+
+<body>
+
+    <h1>Gästbok</h1>
+
+    <form method="post" name="guestBook" onsubmit="return submitForm()">
+
+        <div>
+            <label for="namn">Namn:
+                <br>
+                <input type="text" name="namn" id="namn" placeholder="Ange ditt namn" required>
+            </label>
+        </div>
+        <br>
+        <div>
+            <label for="epost">Epost:
+                <br>
+                <input type="email" name="epost" id="epost" placeholder="Ange din epost adress" required>
+            </label>
+        </div>
+        <br>
+        <div>
+            <label for="telefon">Telefonnummer:
+                <br>
+                <input type="tel" name="telefon" id="telefon" placeholder="Ange ditt telefonnummer">
+            </label>
+        </div>
+        <br>
+        <div>
+            <label for="meddelande">Meddelande:
+                <br>
+                <textarea name="meddelande" id="meddelande" placeholder="Skriv in ett meddelande..."></textarea>
+            </label>
+        </div>
+        <div>
+            <input type="checkbox" value="gdpr" required> Jag godkänner att mina uppgifter lagras.
+        </div>
+        <input type="submit" value="Skicka">
+
+    </form>
+    <h2>Inlägg</h2>
+    <p id="message"></p>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
